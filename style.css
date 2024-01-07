@@ -17,6 +17,15 @@
   font-family: fantasy, cursive;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  top: auto;
+  left: -10000px;
+}
+
 @media (max-width: 768px) {
   .header {
     text-align: center;
@@ -40,7 +49,7 @@
   padding: 0px;
 }
 .task-item,
-.task-list-title {
+.section-title {
   list-style: none;
 }
 .input,
@@ -60,8 +69,7 @@
   color: #3a3a3a;
 }
 /* Heading */
-.task-list-title,
-.new-task-label {
+.section-title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -87,7 +95,7 @@
 }
 
 /* New Task */
-.new-task-label {
+.add-task-title {
   display: block;
   margin: 0 0 20px;
 }
