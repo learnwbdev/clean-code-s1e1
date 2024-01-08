@@ -49,6 +49,7 @@
 
 .new-task {
   display: flex;
+  margin-top: 20px;
 }
 
 .task-list {
@@ -106,10 +107,6 @@
 }
 
 /* New Task */
-.section-tasks__title_new-task {
-  display: block;
-  margin: 0 0 20px;
-}
 .new-task__input-title {
   width: 318px;
 }
