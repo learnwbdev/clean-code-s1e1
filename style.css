@@ -4,6 +4,7 @@
   color: #333;
   font-family: "Lato", sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
@@ -32,6 +33,7 @@
     text-align: center;
   }
 }
+
 .main {
   display: block;
   width: 500px;
@@ -44,17 +46,21 @@
   display: inline-block;
   flex-grow: 1;
 }
+
 .new-task {
   display: flex;
 }
+
 .task-list {
   margin: 0;
   padding: 0px;
 }
+
 .task-item,
 .section-tasks__title {
   list-style: none;
 }
+
 .input,
 .btn {
   outline: none;
@@ -71,6 +77,7 @@
 .btn:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
 .section-tasks__title {
   color: #333;
@@ -112,7 +119,6 @@
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,6 +139,7 @@
 .task-item__input-title {
   width: 226px;
 }
+
 .btn__icon_delete-task {
   height: 2em;
   transform: rotateZ(45deg);
