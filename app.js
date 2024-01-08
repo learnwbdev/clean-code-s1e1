@@ -14,7 +14,7 @@ const createNewTaskItem = function (taskString) {
   const deleteButtonImg = document.createElement("img");
 
   labelTaskTitle.innerText = taskString;
-  labelTaskTitle.className = 'task-title task-title-label';
+  labelTaskTitle.className = "task-title task-title-label";
 
   listItem.className = "task-item";
 
@@ -28,7 +28,7 @@ const createNewTaskItem = function (taskString) {
 
   deleteButton.className = "btn delete-task";
   deleteButton.ariaLabel = "delete task";
-  deleteButtonImg.src = './remove.svg';
+  deleteButtonImg.src = "./remove.svg";
   deleteButtonImg.className = "delete-task-ico";
   deleteButtonImg.ariaHidden = "true";
   deleteButtonImg.alt = "";
@@ -67,7 +67,7 @@ const editTask = function () {
   console.log("Edit Task...");
   console.log("Change 'edit' to 'save'");
   const listItem = this.parentNode;
-  const editInput = listItem.querySelector('input[type=text]');
+  const editInput = listItem.querySelector("input[type=text]");
   const label = listItem.querySelector("label");
   const editBtn = listItem.querySelector(".edit-task");
   const hasEditModeClass = listItem.classList.contains("edit-mode");
