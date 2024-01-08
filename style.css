@@ -57,8 +57,7 @@
   padding: 0;
 }
 
-.task-item,
-.section-tasks__title {
+.task-item {
   list-style: none;
 }
 
