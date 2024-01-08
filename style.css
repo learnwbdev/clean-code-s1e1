@@ -8,8 +8,10 @@
 .header {
   width: 500px;
   margin: 0 auto;
+  margin-bottom: 16px;
   display: block;
   text-align: right;
+  line-height: 16px;
 }
 .header__img {
   width: 100%;
@@ -49,7 +51,7 @@
 
 .new-task {
   display: flex;
-  margin-top: 20px;
+  margin: 20px 0 16px 0;
 }
 
 .task-list {
@@ -100,6 +102,7 @@
   border-radius: 6px;
   font-family: "Lato", sans-serif;
   color: #888;
+  box-sizing: border-box;
 }
 .task-input-title:focus {
   color: #333;
