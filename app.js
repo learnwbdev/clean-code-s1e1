@@ -108,13 +108,8 @@ const markTaskIncomplete = function () {
   bindTaskEvents(listItem, markTaskCompleted);
 }
 
-const ajaxRequest = function () {
-  console.log("AJAX Request");
-}
-
 addButton.onclick = addTask;
 addButton.addEventListener("click", addTask);
-addButton.addEventListener("click", ajaxRequest);
 
 for (let i = 0; i < incompleteTaskHolder.children.length; i++) {
   bindTaskEvents(incompleteTaskHolder.children[i], markTaskCompleted);
