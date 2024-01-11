@@ -94,7 +94,7 @@
 .task-input-title {
   margin: 0;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 18px;
   height: 21px;
   padding: 0 9px;
   border: 1px solid #ddd;
@@ -143,6 +143,8 @@
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
+  display: block;
+  width: 100%;
 }
 .btn__icon_delete-task:hover {
   transform: rotateZ(0);
