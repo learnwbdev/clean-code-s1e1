@@ -92,11 +92,21 @@ const deleteTask = function () {
   ul.removeChild(listItem);
 }
 
+const toggleTaskState = function(taskListItem) {
+  const checkboxState = taskListItem.querySelector(".task-item__state-checkbox");
+  const taskLabel = taskListItem.querySelector(".task-item__title");
+
+  checkboxState.classList.toggle("task-item__state-checkbox_completed");
+  taskLabel.classList.toggle("task-item__title_completed");
+  taskListItem.classList.toggle("task-item_completed");
+}
+
 const markTaskCompleted = function () {
   console.log("Complete Task...");
   // when the checkbox is checked,
   // append the task list item to the completed-tasks list
   const listItem = this.parentNode;
+  toggleTaskState(listItem);
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, markTaskIncomplete);
 }
@@ -106,6 +116,7 @@ const markTaskIncomplete = function () {
   // when the checkbox is unchecked,
   // append the task list item to the incomplete-tasks list
   const listItem = this.parentNode;
+  toggleTaskState(listItem);
   incompleteTaskHolder.appendChild(listItem);
   bindTaskEvents(listItem, markTaskCompleted);
 }
